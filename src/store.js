@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import cartReducer from './CartSlice';
- const store = configureStore({
+
+// 配置 Redux store
+const store = configureStore({
     reducer: {
-        cart: cartReducer,
+        cart: cartReducer, // cart 切片的 reducer
     },
 });
-export default store
+
+// 导出配置好的 store
+export default store;
